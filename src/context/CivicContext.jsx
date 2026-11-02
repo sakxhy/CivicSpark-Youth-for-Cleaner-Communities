@@ -108,7 +108,7 @@ export const CivicProvider = ({ children }) => {
     return [
       {
         id: 'CERT-2026-8812',
-        eventName: 'Sunshine Memorial Park Restoration & Wall Mural',
+        eventName: 'Joggers Park & Chimbai Seaside Cleanup and Wall Art',
         issueDate: 'October 22, 2026',
         hoursLogged: 5,
         recipientName: initialCurrentUser.name,
@@ -227,7 +227,7 @@ export const CivicProvider = ({ children }) => {
       category: newIssueData.category,
       description: newIssueData.description,
       location: newIssueData.location,
-      coordinates: newIssueData.coordinates || [40.7128, -74.006],
+      coordinates: newIssueData.coordinates || [19.0596, 72.8295],
       photoUrl: newIssueData.photoUrl || 'https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&q=80&w=600',
       status: 'Reported',
       reportedBy: user.name,
@@ -326,7 +326,7 @@ export const CivicProvider = ({ children }) => {
       date: eventData.date,
       time: eventData.time || '09:00 AM - 01:00 PM',
       location: eventData.location,
-      coordinates: eventData.coordinates || [40.7128, -74.006],
+      coordinates: eventData.coordinates || [19.0596, 72.8295],
       description: eventData.description,
       image: eventData.image || 'https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?auto=format&fit=crop&q=80&w=800',
       totalSlots: Number(eventData.totalSlots) || 30,
@@ -456,7 +456,7 @@ export const CivicProvider = ({ children }) => {
     setCertificates([
       {
         id: 'CERT-2026-8812',
-        eventName: 'Sunshine Memorial Park Restoration & Wall Mural',
+        eventName: 'Joggers Park & Chimbai Seaside Cleanup and Wall Art',
         issueDate: 'October 22, 2026',
         hoursLogged: 5,
         recipientName: initialCurrentUser.name,

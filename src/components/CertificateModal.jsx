@@ -106,10 +106,10 @@ export default function CertificateModal() {
             <div className="mt-8 pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-6 px-4">
               <div className="text-center sm:text-left">
                 <p className="font-serif italic text-lg text-slate-800 border-b border-slate-400 pb-1">
-                  Dr. Helena Vance
+                  Dr. Vikramaditya Kulkarni
                 </p>
-                <p className="text-xs font-bold text-slate-700 uppercase mt-1">Director of Public Cleanliness</p>
-                <p className="text-[10px] text-slate-500">Municipal Environmental Authority</p>
+                <p className="text-xs font-bold text-slate-700 uppercase mt-1">Assistant Municipal Commissioner</p>
+                <p className="text-[10px] text-slate-500">Brihanmumbai Municipal Corporation (BMC H-West)</p>
               </div>
 
               {/* Verified Digital Seal */}
@@ -117,7 +117,7 @@ export default function CertificateModal() {
                 <div className="w-16 h-16 rounded-full border-2 border-dashed border-nature-600 bg-nature-50 flex items-center justify-center p-2 text-center shadow-inner">
                   <div className="text-[9px] font-black tracking-tight text-nature-800 leading-none">
                     CIVIC SPARK<br />
-                    ★ VERIFIED ★<br />
+                    ★ MUMBAI ★<br />
                     2026
                   </div>
                 </div>
@@ -126,10 +126,10 @@ export default function CertificateModal() {
 
               <div className="text-center sm:text-right">
                 <p className="font-serif italic text-lg text-slate-800 border-b border-slate-400 pb-1">
-                  Alex Rivera
+                  Aarav Sharma
                 </p>
-                <p className="text-xs font-bold text-slate-700 uppercase mt-1">Youth Organizing Council</p>
-                <p className="text-[10px] text-slate-500">CivicSpark Network Chapter</p>
+                <p className="text-xs font-bold text-slate-700 uppercase mt-1">Mumbai Youth Organizing Council</p>
+                <p className="text-[10px] text-slate-500">CivicSpark Maharashtra Chapter</p>
               </div>
             </div>
           </div>

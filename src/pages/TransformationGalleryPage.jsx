@@ -20,17 +20,17 @@ const SAMPLE_PRESETS = [
   {
     before: 'https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&q=80&w=700',
     after: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80&w=700',
-    label: 'Alleyway to Garden'
+    label: 'Chimbai Coastal Alley'
   },
   {
     before: 'https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&q=80&w=700',
     after: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=700',
-    label: 'Canal Bank Clean'
+    label: 'Bandra Talao Lakebank'
   },
   {
     before: 'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&q=80&w=700',
     after: 'https://images.unsplash.com/photo-1519331379826-f10be5486c6f?auto=format&fit=crop&q=80&w=700',
-    label: 'Park & Mural Revival'
+    label: 'Joggers Park Warli Art'
   }
 ];
 
@@ -267,7 +267,7 @@ export default function TransformationGalleryPage() {
                 <input
                   type="text"
                   required
-                  placeholder="e.g. Greenwood Bus Depot Dump Cleared & Repainted"
+                  placeholder="e.g. Bandra Reclamation Promenade Plastic Cleanup"
                   value={formData.title}
                   onChange={(e) => setFormData({ ...formData, title: e.target.value })}
                   className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs text-slate-800"
@@ -281,7 +281,7 @@ export default function TransformationGalleryPage() {
                 <input
                   type="text"
                   required
-                  placeholder="e.g. Greenwood Bus Depot, Sector 4"
+                  placeholder="e.g. Bandra Reclamation, Sea Link Promenade, Bandra West"
                   value={formData.location}
                   onChange={(e) => setFormData({ ...formData, location: e.target.value })}
                   className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs text-slate-800"

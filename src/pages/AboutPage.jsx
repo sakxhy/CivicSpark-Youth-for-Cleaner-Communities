@@ -49,7 +49,7 @@ export default function AboutPage({ setActivePage }) {
     },
     {
       q: 'How are reported civic issues verified and resolved?',
-      a: 'When an issue is reported through our Civic Spotter with a photo and map location, municipal coordinators review it. High-priority hygiene hazards are either flagged to public works or scheduled as youth cleanup missions.'
+      a: 'When an issue is reported through our Civic Spotter with a photo and map location, BMC ward coordinators review it. High-priority hygiene hazards are either flagged to public works or scheduled as youth cleanup missions.'
     },
     {
       q: 'How do Green Points and Certificates work?',
@@ -177,7 +177,7 @@ export default function AboutPage({ setActivePage }) {
             </div>
             <div className="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/10">
               <h4 className="text-sm font-bold text-civic-300 mb-1">🤝 Intergenerational Bond</h4>
-              <p className="text-xs text-slate-300">Collaborating with municipal sanitation workers who keep our city running daily.</p>
+              <p className="text-xs text-slate-300">Collaborating with BMC Safai Karamcharis who keep Mumbai running daily.</p>
             </div>
             <div className="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/10">
               <h4 className="text-sm font-bold text-amber-300 mb-1">🎓 Certified Civic Leadership</h4>

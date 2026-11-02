@@ -54,7 +54,7 @@ export default function UserProfilePage({ setActivePage }) {
         <div className="h-32 -mx-6 -mt-6 sm:-mx-8 sm:-mt-8 bg-gradient-to-r from-emerald-600 via-nature-600 to-civic-700 relative">
           <div className="absolute top-4 right-4">
             <span className="px-3 py-1 rounded-full bg-white/20 text-white text-xs font-bold uppercase backdrop-blur-sm">
-              {role === 'admin' ? '🏛️ Administrator Mode' : '🌱 Volunteer Account'}
+              {role === 'admin' ? '🏛️ BMC Ward Officer' : '🌱 Youth Volunteer'}
             </span>
           </div>
         </div>

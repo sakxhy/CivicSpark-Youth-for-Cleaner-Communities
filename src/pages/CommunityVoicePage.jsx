@@ -354,7 +354,7 @@ export default function CommunityVoicePage() {
                 <input
                   type="text"
                   required
-                  placeholder="e.g. Turn empty lot behind library into reading garden"
+                  placeholder="e.g. Turn vacant corner near Bandra Talao into reading pocket garden"
                   value={suggestionForm.title}
                   onChange={(e) => setSuggestionForm({ ...suggestionForm, title: e.target.value })}
                   className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs text-slate-800"
@@ -367,7 +367,7 @@ export default function CommunityVoicePage() {
                 </label>
                 <select
                   value={suggestionForm.category}
-                  onChange={(e) => setFormData({ ...suggestionForm, category: e.target.value })}
+                  onChange={(e) => setSuggestionForm({ ...suggestionForm, category: e.target.value })}
                   className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs text-slate-800"
                 >
                   <option value="Green Space">Green Space & Pocket Park</option>

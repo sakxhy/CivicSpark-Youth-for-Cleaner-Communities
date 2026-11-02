@@ -54,7 +54,7 @@ export default function CivicSpotterPage() {
     location: '',
     description: '',
     photoUrl: SAMPLE_PHOTOS[0].url,
-    coordinates: [40.7128, -74.006],
+    coordinates: [19.0596, 72.8295],
   });
 
   // Admin note state for detail modal
@@ -81,7 +81,7 @@ export default function CivicSpotterPage() {
     if (!mapContainerRef.current) return;
 
     if (!mapInstanceRef.current) {
-      const map = L.map(mapContainerRef.current).setView([40.715, -74.005], 13);
+      const map = L.map(mapContainerRef.current).setView([19.0596, 72.8295], 14);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -171,7 +171,7 @@ export default function CivicSpotterPage() {
       location: '',
       description: '',
       photoUrl: SAMPLE_PHOTOS[0].url,
-      coordinates: [40.7128, -74.006],
+      coordinates: [19.0596, 72.8295],
     });
   };
 
@@ -545,7 +545,7 @@ export default function CivicSpotterPage() {
                   <input
                     type="text"
                     required
-                    placeholder="e.g. Corner of 5th Ave & Elm St"
+                    placeholder="e.g. Near St. Andrew's Church, Hill Road, Bandra West"
                     value={formData.location}
                     onChange={(e) => setFormData({ ...formData, location: e.target.value })}
                     className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs text-slate-800 focus:outline-none focus:ring-2 focus:ring-nature-500"

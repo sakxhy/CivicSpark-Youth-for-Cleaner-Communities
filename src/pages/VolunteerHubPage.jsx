@@ -368,7 +368,7 @@ export default function VolunteerHubPage() {
                 <input
                   type="text"
                   required
-                  placeholder="e.g. Pine Valley Park Cleanup & Sapling Drive"
+                  placeholder="e.g. Bandra Talao Lotus Lake Perimeter Cleanup"
                   value={formData.title}
                   onChange={(e) => setFormData({ ...formData, title: e.target.value })}
                   className="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs text-slate-800 focus:outline-none focus:ring-2 focus:ring-civic-500"
@@ -439,7 +439,7 @@ export default function VolunteerHubPage() {
                 <input
                   type="text"
                   required
-                  placeholder="e.g. Pine Valley Park Pavilion, Gate 3"
+                  placeholder="e.g. Bandra Bandstand Promenade, near Amphitheatre"
                   value={formData.location}
                   onChange={(e) => setFormData({ ...formData, location: e.target.value })}
                   className="w-full px-3 py-2 rounded-xl border border-slate-200 text-xs text-slate-800"

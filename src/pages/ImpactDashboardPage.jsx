@@ -367,9 +367,9 @@ export default function ImpactDashboardPage() {
             <span className="text-xs uppercase font-bold tracking-wider text-nature-400">
               Civic Accountability Documentation
             </span>
-            <h3 className="text-xl font-bold mt-1">2026 Youth Civic Impact Synthesis Report</h3>
+            <h3 className="text-xl font-bold mt-1">2026 Mumbai Suburbs Youth Civic Impact Report</h3>
             <p className="text-xs text-slate-400 mt-1 max-w-xl">
-              Published jointly by the Metro Youth Environmental Alliance and Municipal Sanitation Department.
+              Published jointly by the Mumbai Youth Environmental Alliance and BMC Solid Waste Management Department.
             </p>
           </div>
 

@@ -74,7 +74,7 @@ export default function Navbar({ activePage, setActivePage }) {
                     : 'text-white/90 hover:text-white'
                 }`}
               >
-                🏛️ Municipal Admin
+                🏛️ BMC Ward Officer
               </button>
             </div>
           </div>

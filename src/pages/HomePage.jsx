@@ -118,13 +118,13 @@ export default function HomePage({ setActivePage }) {
                     </div>
                     <div className="absolute bottom-3 left-3 right-3 text-white">
                       <p className="text-xs font-semibold text-nature-300">Latest Drive Highlight</p>
-                      <h4 className="text-base font-bold leading-tight">Eastside Micro-Forest Plantation & Trail Clean</h4>
+                      <h4 className="text-base font-bold leading-tight">Carter Road Coastal Mangrove Clean & Plantation</h4>
                       <p className="text-[11px] text-slate-300 mt-1 flex items-center gap-2">
-                        <span>👥 51 Volunteers</span>
+                        <span>👥 60+ Volunteers</span>
                         <span>•</span>
-                        <span>🌱 500 Saplings</span>
+                        <span>🌱 50 Mangrove Saplings</span>
                         <span>•</span>
-                        <span>📍 Rail Yard District</span>
+                        <span>📍 Bandra West, Mumbai</span>
                       </p>
                     </div>
                   </div>
