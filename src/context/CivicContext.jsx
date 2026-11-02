@@ -18,17 +18,36 @@ import {
 
 const CivicContext = createContext();
 
+const STORAGE_VERSION_KEY = 'civicspark_app_version';
+const CURRENT_VERSION = 'civicspark_mumbai_v3_bandra';
+
+// Storage keys namespaced to Mumbai version
 const STORAGE_KEYS = {
-  USER: 'civicspark_user',
-  ROLE: 'civicspark_role',
-  ISSUES: 'civicspark_issues',
-  EVENTS: 'civicspark_events',
-  TRANSFORMATIONS: 'civicspark_transformations',
-  POLLS: 'civicspark_polls',
-  SUGGESTIONS: 'civicspark_suggestions',
-  DISCUSSIONS: 'civicspark_discussions',
-  CERTIFICATES: 'civicspark_certificates',
+  USER: 'civicspark_mumbai_v3_user',
+  ROLE: 'civicspark_mumbai_v3_role',
+  ISSUES: 'civicspark_mumbai_v3_issues',
+  EVENTS: 'civicspark_mumbai_v3_events',
+  TRANSFORMATIONS: 'civicspark_mumbai_v3_transformations',
+  POLLS: 'civicspark_mumbai_v3_polls',
+  SUGGESTIONS: 'civicspark_mumbai_v3_suggestions',
+  DISCUSSIONS: 'civicspark_mumbai_v3_discussions',
+  CERTIFICATES: 'civicspark_mumbai_v3_certificates',
 };
+
+// Automatic one-time cleanup of legacy/cached non-Indian browser storage
+if (typeof window !== 'undefined') {
+  try {
+    const existingVer = localStorage.getItem(STORAGE_VERSION_KEY);
+    const oldUser = localStorage.getItem('civicspark_user');
+    const oldTrans = localStorage.getItem('civicspark_transformations');
+    if (existingVer !== CURRENT_VERSION || (oldUser && oldUser.includes('Alex')) || (oldTrans && oldTrans.includes('West End'))) {
+      localStorage.clear();
+      localStorage.setItem(STORAGE_VERSION_KEY, CURRENT_VERSION);
+    }
+  } catch (e) {
+    console.error('Storage initialization notice:', e);
+  }
+}
 
 export const CivicProvider = ({ children }) => {
   // Current user role
@@ -445,6 +464,7 @@ export const CivicProvider = ({ children }) => {
   // Reset to default data
   const resetToDefaultData = () => {
     localStorage.clear();
+    localStorage.setItem(STORAGE_VERSION_KEY, CURRENT_VERSION);
     setRole('volunteer');
     setUser(initialCurrentUser);
     setIssues(initialIssues);

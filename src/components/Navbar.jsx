@@ -98,11 +98,11 @@ export default function Navbar({ activePage, setActivePage }) {
                   Civic<span className="text-nature-600">Spark</span>
                 </span>
                 <span className="px-1.5 py-0.5 text-[10px] font-bold uppercase rounded bg-nature-100 text-nature-800 border border-nature-200">
-                  Youth
+                  Mumbai
                 </span>
               </div>
               <p className="text-[11px] text-slate-500 font-medium tracking-tight -mt-0.5 hidden sm:block">
-                Youth-Led Volunteering for Cleaner Communities
+                Youth-Led Volunteering for Cleaner Communities • Bandra & Coastal Suburbs
               </p>
             </div>
           </div>

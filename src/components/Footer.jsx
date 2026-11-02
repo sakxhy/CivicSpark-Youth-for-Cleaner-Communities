@@ -58,7 +58,7 @@ export default function Footer({ setActivePage }) {
             </p>
             <div className="mt-4 pt-3 flex items-center gap-2 text-xs text-emerald-400 font-semibold">
               <ShieldCheck className="w-4 h-4" />
-              <span>Municipal Verified Partner</span>
+              <span>BMC H-West Ward & Swachh Bharat Partner</span>
             </div>
           </div>
 
