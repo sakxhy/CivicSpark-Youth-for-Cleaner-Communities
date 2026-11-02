@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 200" fill="none">
+  <defs>
+    <!-- Background Emblem Gradient -->
+    <linearGradient id="hBgGrad" x1="20" y1="20" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="45%" stop-color="#16A34A" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+
+    <!-- Leaf Core Gradient -->
+    <linearGradient id="hLeafGrad" x1="60" y1="140" x2="135" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#DCFCE7" />
+    </linearGradient>
+
+    <!-- Accent Sprout Gradient -->
+    <linearGradient id="hSproutGrad" x1="70" y1="130" x2="110" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#86EFAC" />
+    </linearGradient>
+
+    <!-- Spark Gradient -->
+    <linearGradient id="hSparkGrad" x1="130" y1="40" x2="160" y2="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="50%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FBBF24" />
+    </linearGradient>
+  </defs>
+
+  <!-- Emblem Icon on Left -->
+  <g transform="translate(16, 16)">
+    <!-- Squircle Container -->
+    <rect x="0" y="0" width="168" height="168" rx="42" fill="url(#hBgGrad)" />
+    <rect x="0" y="0" width="168" height="168" rx="42" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2.5" />
+
+    <!-- Sprout Blade -->
+    <path d="M60 130 C56 108 66 86 82 72 C86 84 82 102 72 115 C67 121 63 126 60 130 Z" 
+          fill="url(#hSproutGrad)" fill-opacity="0.9" />
+
+    <!-- Main Leaf -->
+    <path d="M50 136 C50 96 75 66 112 52 C120 84 100 120 66 136 C60 138 54 138 50 136 Z" 
+          fill="url(#hLeafGrad)" />
+
+    <!-- Leaf Vein -->
+    <path d="M58 130 Q 78 98 106 58" 
+          stroke="#15803D" stroke-width="3" stroke-linecap="round" stroke-opacity="0.4" />
+
+    <!-- Spark Star -->
+    <g transform="translate(125, 48)">
+      <path d="M 0,-18 Q 0,-2 16,0 Q 0,2 0,18 Q 0,2 -16,0 Q 0,-2 0,-18 Z" 
+            fill="url(#hSparkGrad)" />
+      <circle cx="0" cy="0" r="3.5" fill="#FFFFFF" />
+    </g>
+  </g>
+
+  <!-- Typography on Right -->
+  <g transform="translate(216, 0)">
+    <!-- Main Brand Name -->
+    <text x="0" y="112" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="900" font-size="74" letter-spacing="-1.5">
+      <tspan fill="#0F172A">Civic</tspan><tspan fill="#16A34A">Spark</tspan>
+    </text>
+
+    <!-- Tagline & Mission -->
+    <text x="4" y="146" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="800" font-size="16" letter-spacing="3" fill="#64748B">
+      YOUTH FOR CLEANER COMMUNITIES
+    </text>
+
+    <!-- Sub-tag pill -->
+    <rect x="424" y="68" width="86" height="28" rx="8" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1.5" />
+    <text x="467" y="87" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-weight="800" font-size="12" fill="#15803D" text-anchor="middle" letter-spacing="1">MUMBAI</text>
+  </g>
+</svg>

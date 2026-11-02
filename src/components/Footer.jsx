@@ -1,5 +1,6 @@
 import React from 'react';
 import { useCivic } from '../context/CivicContext';
+import Logo from './Logo';
 import { Sparkles, Heart, RefreshCw, ShieldCheck, ExternalLink, Leaf, ArrowRight } from 'lucide-react';
 
 export default function Footer({ setActivePage }) {
@@ -47,11 +48,12 @@ export default function Footer({ setActivePage }) {
         {/* Links Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
           <div>
-            <div className="flex items-center gap-2 text-white font-extrabold text-xl tracking-tight mb-4">
-              <div className="w-8 h-8 rounded-xl bg-nature-600 flex items-center justify-center text-white">
-                <Sparkles className="w-4 h-4" />
+            <div className="flex items-center gap-3 mb-4">
+              <img src="/logo.svg" alt="CivicSpark Logo" className="w-9 h-9 rounded-xl shadow-md" />
+              <div>
+                <span className="text-xl font-black text-white tracking-tight">Civic<span className="text-nature-400">Spark</span></span>
+                <span className="ml-1.5 px-1.5 py-0.2 text-[9px] font-bold uppercase rounded bg-nature-950 text-nature-300 border border-nature-600">Mumbai</span>
               </div>
-              <span>Civic<span className="text-nature-400">Spark</span></span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
               Empowering students and young citizens to identify civic challenges, volunteer in neighborhood drives, and transform neglected spaces into pristine public assets.

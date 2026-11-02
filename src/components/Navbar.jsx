@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useCivic } from '../context/CivicContext';
+import Logo from './Logo';
 import {
   Sparkles,
   MapPin,
@@ -87,24 +88,9 @@ export default function Navbar({ activePage, setActivePage }) {
           {/* Logo & Brand */}
           <div
             onClick={() => handleNavClick('home')}
-            className="flex items-center gap-3 cursor-pointer group"
+            className="cursor-pointer group py-2"
           >
-            <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-nature-500 to-civic-600 flex items-center justify-center text-white shadow-md shadow-nature-500/20 group-hover:scale-105 transition duration-300">
-              <Sparkles className="w-6 h-6" />
-            </div>
-            <div>
-              <div className="flex items-center gap-1.5">
-                <span className="text-2xl font-black tracking-tight text-slate-900 group-hover:text-nature-600 transition">
-                  Civic<span className="text-nature-600">Spark</span>
-                </span>
-                <span className="px-1.5 py-0.5 text-[10px] font-bold uppercase rounded bg-nature-100 text-nature-800 border border-nature-200">
-                  Mumbai
-                </span>
-              </div>
-              <p className="text-[11px] text-slate-500 font-medium tracking-tight -mt-0.5 hidden sm:block">
-                Youth-Led Volunteering for Cleaner Communities • Bandra & Coastal Suburbs
-              </p>
-            </div>
+            <Logo size="md" />
           </div>
 
           {/* Desktop Nav Links */}

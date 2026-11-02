@@ -50,9 +50,7 @@ export default function CertificateModal() {
 
             {/* Certificate Header */}
             <div className="text-center space-y-2">
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-nature-100 text-nature-700 shadow-inner mb-2 border border-nature-200">
-                <ShieldCheck className="w-8 h-8" />
-              </div>
+              <img src="/logo.svg" alt="CivicSpark Seal" className="w-16 h-16 rounded-2xl shadow-md mx-auto mb-2 border-2 border-white ring-2 ring-nature-400" />
               <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 font-serif uppercase">
                 Certificate of Civic Participation
               </h1>
